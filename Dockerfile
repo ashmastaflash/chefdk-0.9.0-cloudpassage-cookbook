@@ -18,4 +18,5 @@ RUN mkdir /cookbooks && \
     cd /cookbooks && \
     git clone https://github.com/cloudpassage/cloudpassage-chef-cookbook.git && \ 
     cd cloudpassage-chef-cookbook && \
+    git checkout develop && \
     chef exec bundle install
